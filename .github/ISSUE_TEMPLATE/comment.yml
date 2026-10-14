@@ -1,0 +1,20 @@
+name: Comment on a page
+description: Say something about one of the notes on sharky.fm.
+title: "Re: "
+labels: ["comment"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      description: The sharky.fm address (or the .md file in this repo) you are commenting on.
+      placeholder: https://sharky.fm/seed-spec
+    validations:
+      required: true
+  - type: textarea
+    id: comment
+    attributes:
+      label: Your comment
+      description: A question, a disagreement, a link, a correction - anything. Quote the passage you mean if it helps.
+    validations:
+      required: true
